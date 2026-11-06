@@ -7,7 +7,7 @@
   <maintainer email="tommy@erdimail.com">ERDI TECH LTD</maintainer>
   <license>MIT</license>
   <url type="website">https://erdilrf.com</url>
-  <url type="repository">https://github.com/Tommyapi/erdi-lrf-ros2-examples</url>
+  <url type="repository">https://github.com/ErdiTech/erdi-lrf-ros2-examples</url>
 
   <exec_depend>rclpy</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>

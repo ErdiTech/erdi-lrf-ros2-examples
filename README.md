@@ -7,7 +7,7 @@ Ready-to-run **ROS 2 examples for ERDI 905 nm laser rangefinder modules**: launc
 ```bash
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
 git clone https://github.com/ErdiTech/erdi-lrf-drivers.git
-git clone https://github.com/Tommyapi/erdi-lrf-ros2-examples.git
+git clone https://github.com/ErdiTech/erdi-lrf-ros2-examples.git
 pip install erdi-lrf pyserial
 cd ~/ros2_ws && colcon build --packages-select erdi_lrf_ros2 erdi_lrf_ros2_examples
 source install/setup.bash
@@ -37,14 +37,14 @@ Topics: `range` (`sensor_msgs/Range`, raw), `range_filtered` (median of slew-lim
 ## Notes
 
 - The pure-Python filters ([`filters.py`](erdi_lrf_ros2_examples/filters.py)) and the file syntax of the launch, YAML and RViz files are tested in CI without ROS: `python -m pytest -q test`.
-- The nodes and launch files have **not been run in a ROS 2 environment by the maintainers yet**; bench reports and pull requests are welcome. Publishing `Range` does not make a module a PX4 / ArduPilot rangefinder: see [flight-controller integration](https://github.com/ErdiTech/erdi-lrf-drivers/blob/main/docs/flight-controller-integration.md) and [erdi-lrf-pixhawk-ardupilot](https://github.com/Tommyapi/erdi-lrf-pixhawk-ardupilot).
+- The nodes and launch files have **not been run in a ROS 2 environment by the maintainers yet**; bench reports and pull requests are welcome. Publishing `Range` does not make a module a PX4 / ArduPilot rangefinder: see [flight-controller integration](https://github.com/ErdiTech/erdi-lrf-drivers/blob/main/docs/flight-controller-integration.md) and [erdi-lrf-pixhawk-ardupilot](https://github.com/ErdiTech/erdi-lrf-pixhawk-ardupilot).
 - Module pages and datasheets: <https://erdilrf.com/models/?utm_source=github&utm_medium=readme&utm_campaign=erdi-lrf-ros2-examples>.
 
 ## Related projects
 
 - [ErdiTech/erdi-lrf-drivers](https://github.com/ErdiTech/erdi-lrf-drivers): Python, Arduino and ROS 2 drivers
-- [erdi-lrf-raspberry-pi-python](https://github.com/Tommyapi/erdi-lrf-raspberry-pi-python): Raspberry Pi logger, MQTT and MAVLink bridge
-- [laser-rangefinder-module-database](https://github.com/Tommyapi/laser-rangefinder-module-database): dataset of laser rangefinder modules
+- [erdi-lrf-raspberry-pi-python](https://github.com/ErdiTech/erdi-lrf-raspberry-pi-python): Raspberry Pi logger, MQTT and MAVLink bridge
+- [laser-rangefinder-module-database](https://github.com/ErdiTech/laser-rangefinder-module-database): dataset of laser rangefinder modules
 
 ## Support / 打赏
 
