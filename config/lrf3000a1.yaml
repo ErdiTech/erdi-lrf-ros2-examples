@@ -1,0 +1,6 @@
+erdi_lrf_range:
+  ros__parameters:
+    port: /dev/ttyUSB0
+    model: LRF3000A1      # polled, 115200 baud, value x 10 metres
+    rate: 5.0
+    frame_id: erdi_lrf

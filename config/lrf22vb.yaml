@@ -1,0 +1,7 @@
+erdi_lrf_range:
+  ros__parameters:
+    port: /dev/ttyUSB0
+    model: LRF22VB        # millimetre stream, 460800 baud
+    rate: 50.0
+    frame_id: erdi_lrf
+    field_of_view: 0.05
