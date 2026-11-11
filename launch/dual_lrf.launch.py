@@ -6,7 +6,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     def lrf(ns, port, model, frame):
         return Node(
-            package="erdi_lrf_ros2", executable="range_node", namespace=ns, name="range", output="screen",
+            package="erdi_lrf_driver", executable="range_node", namespace=ns, name="range", output="screen",
             parameters=[{"port": port, "model": model, "rate": 20.0, "frame_id": frame}],
         )
 

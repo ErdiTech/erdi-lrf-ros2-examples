@@ -8,7 +8,7 @@ import yaml
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 sys.path.insert(0, ROOT)
-from erdi_lrf_ros2_examples.filters import MedianFilter, SlewLimiter  # noqa: E402
+from erdi_lrf_examples.filters import MedianFilter, SlewLimiter  # noqa: E402
 
 
 def test_median_rejects_single_spike():
@@ -35,7 +35,7 @@ def test_slew_limiter_rejects_jump():
     assert s.update(5.2, 0.2) == 5.2
 
 
-@pytest.mark.parametrize("path", glob(os.path.join(ROOT, "launch", "*.py")) + glob(os.path.join(ROOT, "erdi_lrf_ros2_examples", "*.py")))
+@pytest.mark.parametrize("path", glob(os.path.join(ROOT, "launch", "*.py")) + glob(os.path.join(ROOT, "erdi_lrf_examples", "*.py")))
 def test_python_files_compile(path):
     py_compile.compile(path, doraise=True)
 

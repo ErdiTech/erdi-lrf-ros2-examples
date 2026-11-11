@@ -3,7 +3,7 @@ from glob import glob
 
 from setuptools import find_packages, setup
 
-package_name = "erdi_lrf_ros2_examples"
+package_name = "erdi_lrf_examples"
 
 setup(
     name=package_name,
@@ -24,8 +24,8 @@ setup(
     license="MIT",
     entry_points={
         "console_scripts": [
-            "fake_range_node = erdi_lrf_ros2_examples.fake_range_node:main",
-            "range_filter_node = erdi_lrf_ros2_examples.range_filter_node:main",
+            "fake_range_node = erdi_lrf_examples.fake_range_node:main",
+            "range_filter_node = erdi_lrf_examples.range_filter_node:main",
         ],
     },
 )

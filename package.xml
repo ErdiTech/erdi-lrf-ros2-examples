@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>erdi_lrf_ros2_examples</name>
+  <name>erdi_lrf_examples</name>
   <version>0.1.0</version>
   <description>Example launch files, RViz config, filters and a hardware-free demo for the ERDI laser rangefinder ROS 2 driver.</description>
   <maintainer email="tommy@erdimail.com">ERDI TECH LTD</maintainer>
@@ -14,7 +14,7 @@
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>rviz2</exec_depend>
-  <exec_depend>erdi_lrf_ros2</exec_depend>
+  <exec_depend>erdi_lrf_driver</exec_depend>
 
   <test_depend>python3-pytest</test_depend>
 
