@@ -1,5 +1,7 @@
 # ERDI laser rangefinder ROS 2 examples (RViz, launch files, filters)
 
+Datasheets and public prices are on the [LRF22VB page](https://erdilrf.com/models/lrf22vb/?utm_source=github&utm_medium=readme&utm_campaign=erdi-lrf-ros2-examples) and in the [full ERDI laser rangefinder model list](https://erdilrf.com/models/?utm_source=github&utm_medium=readme&utm_campaign=erdi-lrf-ros2-examples).
+
 Ready-to-run **ROS 2 examples for ERDI 905 nm laser rangefinder modules**: launch files, an **RViz2 `sensor_msgs/Range` display**, a **median and slew-rate filter node**, a **hardware-free demo** (synthetic range publisher) and a two-sensor namespace launch. It sits on top of the [`erdi_lrf_driver`](https://github.com/ErdiTech/erdi-lrf-drivers/tree/main/ros2/erdi_lrf_driver) driver package, which publishes `sensor_msgs/Range` for **LRF22VB, LRF50VB, LRF50H-LRF1500H, LR1000E2 ... LR2000E4, LRF1200A1, LRF3000A1 and SPD1200N\*** modules. Use it as a starting point for a **ROS 2 laser distance sensor** on a robot, AGV, drone companion computer or test bench.
 
 ## Build
